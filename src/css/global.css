@@ -130,6 +130,15 @@
   }
 }
 
+/* Certificates bar desktop align and spacing */
+@media (min-width: 1024px) {
+  #cert-cat-bar {
+    padding-top: 0.5rem; /* lg:py-2 */
+    padding-bottom: 0.5rem;
+    gap: 0.5rem;
+  }
+}
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -211,6 +220,20 @@
   #certificates .mb-12 {
     margin-bottom: 2rem; /* tighten space */
   }
+}
+
+/* Make sure Contact Me button text stays visible on hover */
+.contact-btn:hover {
+  color: #0a0a0a !important; /* ensure readable text when bg turns gold */
+}
+
+/* Utility: hide horizontal scrollbar visually */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
 }
 
 .carousel-btn {
