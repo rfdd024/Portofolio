@@ -116,6 +116,20 @@
   }
 }
 
+/* Certificates category bar mobile behavior */
+@media (max-width: 480px) {
+  #cert-cat-bar {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+    gap: 0.375rem; /* tighter gap */
+    padding: 0.375rem; /* smaller padding */
+  }
+  #cert-cat-bar::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -189,6 +203,16 @@
   }
 }
 
+/* Certificates heading size and spacing on small phones */
+@media (max-width: 480px) {
+  #certificates h2 {
+    font-size: 1.75rem; /* ~text-2xl */
+  }
+  #certificates .mb-12 {
+    margin-bottom: 2rem; /* tighten space */
+  }
+}
+
 .carousel-btn {
   position: absolute;
   top: 50%;
@@ -227,6 +251,26 @@
 
   .carousel-btn.next {
     right: -24px;
+  }
+}
+
+/* Smaller carousel controls and dots on small phones */
+@media (max-width: 480px) {
+  .carousel-btn {
+    width: 36px;
+    height: 36px;
+  }
+  .carousel-btn svg {
+    width: 18px;
+    height: 18px;
+  }
+  .carousel-dots {
+    gap: 6px;
+    margin-top: 16px;
+  }
+  .carousel-dot {
+    width: 8px;
+    height: 8px;
   }
 }
 
